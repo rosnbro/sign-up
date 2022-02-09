@@ -14,19 +14,20 @@
             <img src="./img/logo_white.png" alt="Ben Rosenberger logo, a B and R mixed" id="logoImg">
             <div id="logoText">Ben<br>Rosenberger</div>
         </div>
-        <div id="photoCredit">Photo by me: <a href="https://www.instagram.com/benrojammin/">Ben Rosenberger</a></div>
+        <div id="photoCredit">Photo by me: <a href="https://www.instagram.com/benrojammin/" id="creditLink">Ben Rosenberger</a></div>
     </div>
     <div class="main">
         <div class="header">
+            <div class="titleText">Sign Up!</div>
             <div>
-                This sign up sheet won't actually do anything, it's just for me to learn. However, if you like the photo, feel free to follow me!<br>
+                This sign up sheet won't do anything, it's just for me to learn.<br>
+                However, if you like the photo, feel free to follow me!<br>
                 <br>
                 You <em>know</em> you want to.
             </div>
         </div>
-        <form action="">
-            <fieldset class="inputField">
-                <legend>Sign up for nothing here!</legend>
+        <form action="" class="inputField">
+            <div class="inputGroup">
                 <div class="inputItem">
                     <label for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName">
@@ -35,6 +36,8 @@
                     <label for="lastName">Last Name:</label>
                     <input type="text" id="lastName" name="lastName">
                 </div>
+            </div>
+            <div class="inputGroup">
                 <div class="inputItem">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email">
@@ -43,6 +46,8 @@
                     <label for="phoneNum">Phone Number:</label>
                     <input type="tel" id="phoneNum" name="phoneNum">
                 </div>
+            </div>
+            <div class="inputGroup">
                 <div class="inputItem">
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password">
@@ -51,7 +56,7 @@
                     <label for="confirmPass">Confirm Password:</label>
                     <input type="password" id="confirmPass" name="confirmPass">
                 </div>
-            </fieldset>
+            </div>
             <button>Create Account</button>
             <div>Already have an account? <a href="">Log in</a></div>
         </form>
