@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="sidebar">
+    <aside>
         <img src="./img/yosemite.jpeg" alt="Photo of the yosemite valley" id="sidebarImg">
         <div class="logoBG">
             <img src="./img/logo_white.png" alt="Ben Rosenberger logo, a B and R mixed" id="logoImg">
             <div id="logoText">Ben<br>Rosenberger</div>
         </div>
         <div id="photoCredit">Photo by me: <a href="https://www.instagram.com/benrojammin/" id="creditLink">Ben Rosenberger</a></div>
-    </div>
-    <div class="main">
-        <div class="header">
+    </aside>
+    <main>
+        <header>
             <div class="titleText">Sign Up!</div>
             <div>
                 This sign up sheet won't do anything, it's just for me to learn.<br>
@@ -25,41 +25,43 @@
                 <br>
                 You <em>know</em> you want to.
             </div>
-        </div>
+        </header>
         <form action="" class="inputField">
-            <div class="inputGroup">
-                <div class="inputItem">
-                    <label for="firstName">First Name:</label>
+            <p>
+                <label for="firstName">
+                    <span>First Name:</span>
                     <input type="text" id="firstName" name="firstName">
-                </div>
-                <div class="inputItem">
-                    <label for="lastName">Last Name:</label>
+                </label>
+                <label for="lastName">
+                    <span>Last Name:</span>
                     <input type="text" id="lastName" name="lastName">
-                </div>
-            </div>
-            <div class="inputGroup">
-                <div class="inputItem">
-                    <label for="email">Email:*</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="inputItem">
-                    <label for="phoneNum">Phone Number:</label>
+                </label>
+            </p>
+            <p>
+                <label for="phoneNum">
+                    <span>Phone:</span>
                     <input type="tel" id="phoneNum" name="phoneNum">
-                </div>
-            </div>
-            <div class="inputGroup">
-                <div class="inputItem">
-                    <label for="password">Password:*</label>
+                </label>
+            </p>
+            <p>
+                <label for="email">
+                    <span>Email:*</span>
+                    <input type="email" id="email" name="email" required>
+                </label>
+            </p>
+            <p>
+                <label for="password">
+                    <span>Create Password:*</span>
                     <input type="password" id="password" name="password" required>
-                </div>
-                <div class="inputItem">
-                    <label for="confirmPass">Confirm Password:*</label>
+                </label>
+                <label for="confirmPass">
+                    <span>Confirm Password:*</span>
                     <input type="password" id="confirmPass" name="confirmPass" required>
-                </div>
-            </div>
+                </label>
+            </p>
             <button>Create Account</button>
             <div>Already have an account? <a href="">Log in</a></div>
         </form>
-    </div>
+    </main>
 </body>
 </html>
