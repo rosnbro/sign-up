@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <aside>
@@ -30,7 +31,7 @@
             <p>
                 <label for="firstName">
                     <span>First Name:</span>
-                    <input type="text" id="firstName" name="firstName">
+                    <input type="text" id="firstName" name="firstName" pattern="[A-Za-z0-9]+">
                 </label>
                 <label for="lastName">
                     <span>Last Name:</span>
@@ -59,7 +60,7 @@
                     <input type="password" id="confirmPass" name="confirmPass" required>
                 </label>
             </p>
-            <button>Create Account</button>
+            <button id="submitButton" type="button">Create Account</button>
             <div>Already have an account? <a href="">Log in</a></div>
         </form>
     </main>
