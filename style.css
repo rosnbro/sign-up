@@ -169,8 +169,18 @@ label {
 }
 
 input {
+    margin: 0;
     font-family: inherit;
     font-size: 100%;
+    border-color: white;
+}
+
+input:not(:focus):invalid {
+    border-color: red;
+}
+
+.error {
+    background-color: red;
 }
 
 button {

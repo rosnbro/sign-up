@@ -27,37 +27,43 @@
                 You <em>know</em> you want to.
             </div>
         </header>
-        <form action="" class="inputField">
+        <form action="" class="inputField" novalidate>
             <p>
                 <label for="firstName">
                     <span>First Name:</span>
-                    <input type="text" id="firstName" name="firstName" pattern="[A-Za-z0-9]+">
+                    <input type="text" id="firstName" name="firstName" placeholder="J." pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+">
+                    <span class="error" id="firstNameError"></span>
                 </label>
                 <label for="lastName">
                     <span>Last Name:</span>
-                    <input type="text" id="lastName" name="lastName">
+                    <input type="text" id="lastName" name="lastName" placeholder="Doe" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+">
+                    <span class="error" id="lastNameError"></span>
                 </label>
             </p>
             <p>
                 <label for="phoneNum">
                     <span>Phone:</span>
-                    <input type="tel" id="phoneNum" name="phoneNum">
+                    <input type="tel" id="phoneNum" name="phoneNum" placeholder="123-555-4567" pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$">
+                    <span class="error" id="phoneNumError"></span>
                 </label>
             </p>
             <p>
                 <label for="email">
                     <span>Email:*</span>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+                    <span class="error" id="emailError"></span>
                 </label>
             </p>
             <p>
                 <label for="password">
-                    <span>Create Password:*</span>
-                    <input type="password" id="password" name="password" required>
+                    <span>Create Password:* <span title="xkcd 936">ⓘ</span></span>
+                    <input type="password" id="password" name="password">
+                    <span class="error" id="passwordError"></span>
                 </label>
                 <label for="confirmPass">
                     <span>Confirm Password:*</span>
-                    <input type="password" id="confirmPass" name="confirmPass" required>
+                    <input type="password" id="confirmPass" name="confirmPass">
+                    <span class="error" id="confirmPassError"></span>
                 </label>
             </p>
             <button id="submitButton" type="button">Create Account</button>
